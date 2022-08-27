@@ -1,6 +1,6 @@
-#define TIME_BEF_START_ACTION 400
-#define USER_BTN_PIN BTN_2_Pin
-#define USER_PORT_BTN_PIN GPIOB
+#define TIME_BEF_START_ACTION 400 //you can change it
+#define USER_BTN_PIN BTN_2_Pin    //you can change it
+#define USER_PORT_BTN_PIN GPIOB   //you can change it
 
 #include <stdbool.h>
 
@@ -114,10 +114,10 @@ if (!HAL_GPIO_ReadPin(USER_PORT_BTN_PIN, USER_BTN_PIN) && click_flug) {
 
 			//-------------------------------
 			//reset:
-			flug_for_timer = false;				//initial value
-			flug_time_press = true;  			//initial value
-			click_flug = true;					//initial value
-			click = 0;							//initial value
+			flug_for_timer = false;	//initial value
+			flug_time_press = true;	//initial value
+			click_flug = true;	//initial value
+			click = 0;		//initial value
 			//-------------------------------
 		}
 
